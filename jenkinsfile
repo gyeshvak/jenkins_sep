@@ -1,6 +1,6 @@
 node {
      stage('Gitlone')  {
-	    git credentialsId: 'git', url: 'https://github.com/gyeshvak/project1.git'
+	    git branch: 'main', credentialsId: 'gyeshvak', url: 'https://github.com/gyeshvak/jenkins_sep.git'
 	
 	}
 	stage('Maven version') {
